@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-spacing: 2px;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        
+        .Mybutton {
+            background-color: black;
+            border: solid;
+            color: white;
+            text-align: center;
+            font-size: 16px;
+            width: 10%;
+            height: 20%
+        }
+        
+        #result {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <table align="center" width="100%" id="MyCart">
+        <tr>
+            <td colspan="6"><b>My Cart Details</b></td>
+        </tr>
+        <tr>
+            <th>Burger Type</th>
+            <th>Burger Category</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Total Price</th>
+            <th>Remove</th>
+        </tr>
+    </table>
+
+    <h3>Total quantity is <span id="q"></span> & Total Price is <span id="p"></span></h3>
+
+    <input type="button" onclick="view()" class="Mybutton" value="Place Order" />
+
+    <p id="result">Total Quantity is
+        <b><font size="7"><span id="a"> </span></font></b> You will get
+        <b><font size="7"><span id="b"> </span>% </font></b> Discount & Total Price after Discount
+        <b><font size="7">RS.<span id="c"> </span>/-</font></b>
+    </p>
+
+    <script src="js/Burger.js"></script>
+    <script src="js/Cart.js"></script>
+    <script type="text/JavaScript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js">
+    </script>
+
+    <script>
+        document.addEventListener('readystatechange', event => {
+
+            if (event.target.readyState === "interactive") {
+                menu();
+            }
+
+            if (event.target.readyState === "complete") {
+                totalCart();
+            }
+        });
+    </script>
+</body>
+
+</html>

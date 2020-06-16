@@ -1,0 +1,111 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" charset="UTF-8">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Burger Adda</title>
+    <script src="js/Burger.js"></script>
+    <script src="js/Cart.js"></script>
+    <script type="text/JavaScript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js">
+    </script>
+
+</head>
+
+<body>
+    <div class="icon1">
+        <img src="images/icon.jpg">
+    </div>
+
+    <div class="icon2">
+        <img src="images/download.jpg">
+    </div>
+
+    <div class="main-pic">
+        <img src="images/Welcomes.jpg" class="center" width="50%" height="50%">
+    </div>
+    <br><br>
+    <table align="center">
+        <tr>
+            <td><label class="input" id="burgerType1">Crispy Supreme</label></td>
+            <td></td>
+            <td>
+                <select id="myList1" required>
+                        <option value="veg">Veg</option>
+                        <option value="egg">Egg</option>
+                        <option value="chicken">Chicken</option>
+                    </select>
+                <input type="text" id="quantity1" placeholder="Quantity" required/>
+                <button type="button" onclick="addBurgerToCart(document.getElementById('burgerType1').innerText, 
+                document.getElementById('quantity1').value,
+                document.getElementById('myList1').value)">Add to Cart</button>
+            </td>
+        </tr>
+        <tr>
+            <td><label class="input" id="burgerType2">Surprise</label></td>
+            <td></td>
+            <td>
+                <select id="myList2" required>
+                        <option value="veg">Veg</option>
+                        <option value="egg">Egg</option>
+                        <option value="chicken">Chicken</option>
+                    </select>
+                <input type="text" id="quantity2" placeholder="Quantity" required/>
+                <button type="button" onclick="addBurgerToCart(document.getElementById('burgerType2').innerText,
+                document.getElementById('quantity2').value,
+                document.getElementById('myList2').value)">Add to Cart</button>
+            </td>
+        </tr>
+        <tr>
+            <td><label class="input" id="burgerType3">Whoper</label></td>
+            <td></td>
+            <td>
+                <select id="myList3" required>
+                        <option value="veg">Veg</option>
+                        <option value="egg">Egg</option>
+                        <option value="chicken">Chicken</option>
+                    </select>
+                <input type="text" id="quantity3" placeholder="Quantity" required/>
+                <button type="button" onclick="addBurgerToCart(document.getElementById('burgerType3').innerText,
+                document.getElementById('quantity3').value,
+                document.getElementById('myList3').value)">Add to Cart</button>
+            </td>
+        </tr>
+        <tr>
+            <td><label class="input" id="burgerType4">Chilli cheese</label></td>
+            <td></td>
+            <td>
+                <select id="myList4" required>
+                        <option value="veg">Veg</option>
+                        <option value="egg">Egg</option>
+                        <option value="chicken">Chicken</option>
+                    </select>
+                <input type="text" id="quantity4" placeholder="Quantity" required/>
+                <button type="button" onclick="addBurgerToCart(document.getElementById('burgerType4').innerText,
+                document.getElementById('quantity4').value,
+                document.getElementById('myList4').value)">Add to Cart</button>
+            </td>
+        </tr>
+        <tr>
+            <td><label class="input" id="burgerType5">Tandoor Grill</label></td>
+            <td></td>
+            <td>
+                <select id="myList5" required>
+                        <option value="veg">Veg</option>
+                        <option value="egg">Egg</option>
+                        <option value="chicken">Chicken</option>
+                    </select>
+                <input type="text" id="quantity5" placeholder="Quantity" required/>
+                <button type="button" onclick="addBurgerToCart(document.getElementById('burgerType5').innerText,
+                document.getElementById('quantity5').value,
+                document.getElementById('myList5').value)">Add to Cart</button>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" align="center">
+                <input type="button" value="View Cart" size="6px" onclick="addToCart()" />
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

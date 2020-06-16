@@ -1,0 +1,47 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" charset="UTF-8">
+    <link rel="stylesheet" href="css/main.css">
+    <script type="text/JavaScript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js">
+    </script>
+
+    <title>Burger Adda</title>
+</head>
+
+<body>
+    <div class="icon1">
+        <img src="images/icon.jpg">
+    </div>
+
+    <div class="icon2">
+        <img src="images/download.jpg">
+    </div>
+
+    <div class="main-pic">
+        <img src="images/burgermain1.jpg" class="center" width="50%" height="50%">
+    </div>
+    <br><br>
+    <form action="Burger.html" onsubmit="check()" name="form1" id="form1">
+        <div class="input">
+            <label><h1>Mobile No</h1></label>
+            <input type="text" id="mob" placeholder="Enter Mobile No." required minlength="10" />
+            <input type="submit" name="SUBMIT" value="SUBMIT" />
+        </div>
+    </form>
+    <script>
+        function check() {
+            var num = document.getElementById('mob').value;
+            var pattern = /^[7-9]{1}[0-9]{9}$/;
+            if (pattern.test(num) == false) {
+                alert("Please enter valid mobile number :- " + num);
+                console.log(num);
+                return false
+            }
+            console.log(num);
+            return true;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+body {
+    background-color: black;
+    margin: 0%;
+}
+
+.icon1 {
+    padding-top: 5%;
+    padding-left: 2%;
+    position: absolute;
+}
+
+.icon2 {
+    padding-top: 5%;
+    padding-right: 2%;
+    float: right;
+    position: relative;
+}
+
+.main-pic {
+    padding-top: 10%;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15%;
+}
+
+.input {
+    color: aliceblue;
+    text-align: center;
+}
